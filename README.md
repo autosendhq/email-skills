@@ -23,10 +23,33 @@ email-skills/
 └── monitoring/             Postmaster Tools, blacklists, diagnosis, recovery
 ```
 
+## Installation
+
+**Global (all projects):**
+
+```bash
+git clone https://github.com/akashbhadange/email-skills ~/.claude/skills/email-skills
+```
+
+**Project-level (current project only):**
+
+```bash
+git clone https://github.com/akashbhadange/email-skills .claude/skills/email-skills
+```
+
+Once placed, Claude Code discovers the skill automatically.
+
 ## Usage
 
-Load `SKILL.md` as the entry point. It provides an overview and
-routes to the relevant sub-skill for any specific topic.
+Invoke the skill from any Claude Code conversation:
+
+```
+/email-skills
+```
+
+Or describe an email-related task and Claude will load it automatically based on context.
+
+The entry point (`SKILL.md`) provides an overview and routes to the relevant sub-skill for the task at hand. Sub-skills are loaded on demand.
 
 ## Scope
 
