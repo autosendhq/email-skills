@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-marketing-campaigns",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm building an onboarding email sequence for new users of my SaaS product. They sign up for a free trial and I want to guide them to activation over the first two weeks. How should I structure this?",
+      "expected_output": "A concrete onboarding drip structure: immediate welcome email, behavior-triggered sequence based on product actions (not just calendar), stopping the sequence when the user activates, escalating to soft CTA around day 10-14. Should cover the 'one email one goal' rule, keeping each email focused on a single activation milestone, and stopping sends to users who have already converted."
+    },
+    {
+      "id": 2,
+      "prompt": "We have a list of 45,000 contacts and we want to send a product launch announcement tomorrow. Our last send to this full list was 8 months ago. What should we know before we send?",
+      "expected_output": "A warning about the risks of blasting a cold list after 8 months: high likelihood of elevated bounce and complaint rates, potential spam trap hits from inactive addresses. Should recommend: segmenting to recent engagers first (last 90 days of clicks), validating the full list before sending to cold segments, batching the send, and monitoring complaint rate closely in the first hour. Should not just say 'don't do it' but give a practical path forward."
+    },
+    {
+      "id": 3,
+      "prompt": "Our open rates look great — around 55% — but our click rates are terrible, like 0.8%. What's going on and what should we optimize?",
+      "expected_output": "Identification that the open rate is almost certainly inflated by Apple Mail Privacy Protection — 55% is a classic MPP-inflated number. Click rate at 0.8% is the real signal and it is low. Should cover: why click rate is a more reliable metric, diagnosing low clicks (weak CTA, too many competing links, mismatch between subject promise and email content, irrelevant segment), and concrete improvement strategies (one CTA, stronger CTA copy, better segmentation)."
+    }
+  ]
+}

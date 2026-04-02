@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-monitoring",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just set up a new sending domain for my startup. What monitoring should I put in place before I start sending, and what should I watch in the first few weeks?",
+      "expected_output": "A concrete monitoring setup checklist: Google Postmaster Tools (with setup steps), Microsoft SNDS registration, MXToolbox blacklist alerts, FBL registration with Yahoo. For first weeks: daily Postmaster Tools checks (domain reputation and spam rate), bounce rate per campaign, what thresholds to act on. Should explain what each tool shows and why it matters."
+    },
+    {
+      "id": 2,
+      "prompt": "Our domain reputation in Google Postmaster Tools just dropped from High to Low overnight. We haven't changed anything. What do I do?",
+      "expected_output": "A systematic diagnosis sequence: check spam rate graph for a spike and correlate with recent send dates, check for new blacklist listings, verify authentication records are still intact (DNS changes can silently break DKIM), review bounce rates on recent campaigns, check whether a new list segment was sent to. Should cover the recovery timeline expectation (4-8 weeks of clean sending) and what 'clean sending' means during recovery."
+    },
+    {
+      "id": 3,
+      "prompt": "We got listed on Spamhaus this morning. Our whole team is panicking. Walk me through what to do.",
+      "expected_output": "A calm, step-by-step recovery plan: first identify which Spamhaus list (SBL/XBL/PBL) and read the listing reason, then stop sending from the affected IP/domain while diagnosing, fix the root cause before requesting removal (and explain why requesting removal without fixing is counterproductive), submit the removal request with specifics about what was fixed. Should explain the typical 24-48 hour resolution timeline and the risk of relisting if root cause isn't resolved."
+    }
+  ]
+}

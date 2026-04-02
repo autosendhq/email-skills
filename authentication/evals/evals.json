@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-authentication",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I added SPF and DKIM records for my domain last week but I'm still seeing DMARC failures in my aggregate reports. The SPF and DKIM checks are both passing individually. What's going on?",
+      "expected_output": "An explanation of DMARC alignment — that SPF and DKIM passing individually is not enough if neither aligns with the From domain. Should cover relaxed vs strict alignment, envelope sender vs From domain mismatch, and d= tag in DKIM. Should include actionable fix steps."
+    },
+    {
+      "id": 2,
+      "prompt": "We're migrating from SendGrid to a new ESP and I want to make sure our authentication is set up correctly on the new one before we switch over. Walk me through what DNS records I need and in what order to set them up.",
+      "expected_output": "A step-by-step authentication setup sequence: SPF record with the new provider's include, DKIM with 2048-bit key and custom signing domain, DMARC starting at p=none with an rua address. Should explain the order rationale (SPF and DKIM before DMARC enforcement) and include validation commands."
+    },
+    {
+      "id": 3,
+      "prompt": "Our email team just told me we're hitting the SPF permerror. I've never heard of this. What does it mean and how do we fix it?",
+      "expected_output": "An explanation of the 10 DNS lookup limit, why permerror occurs when exceeded, how to audit current lookups, and concrete fix options (consolidating providers, SPF flattening). Should explain the tradeoffs of flattening and what happens if the problem is not fixed."
+    }
+  ]
+}

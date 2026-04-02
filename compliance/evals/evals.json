@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-compliance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have users in the EU and we want to start sending them a weekly product newsletter. One of my co-founders says we need explicit opt-in consent, but another says we can rely on legitimate interest since they're already customers. Who's right?",
+      "expected_output": "A clear explanation that for direct marketing email to EU individuals, consent is the appropriate lawful basis — legitimate interest is difficult to defend for direct marketing and would not survive regulatory scrutiny in most cases. Should cover what valid GDPR consent requires (freely given, specific, informed, unambiguous) and recommend a separate opt-in checkbox at signup."
+    },
+    {
+      "id": 2,
+      "prompt": "A user in Germany emailed us asking to be deleted from our system. We use their email address on our suppression list to make sure we don't send to them again. Are we allowed to keep that address under GDPR?",
+      "expected_output": "An explanation of the right to erasure nuance: you must delete all personal data but retaining the email address in a suppression list with a record that erasure was requested is both legally defensible and necessary to honor the suppression. Should explain why truly deleting the address would make it impossible to prevent future sending."
+    },
+    {
+      "id": 3,
+      "prompt": "We're a US-based company and we don't have any EU users yet. Do we need to worry about GDPR at all, and what about CAN-SPAM — is that enough to stay compliant?",
+      "expected_output": "Explanation that GDPR applies based on the location of data subjects, not the sender — so any EU users trigger GDPR regardless of company location. CAN-SPAM is a lower bar (opt-out rather than opt-in) that covers US-based commercial email. Should summarize the key differences and recommend building toward GDPR standards even for US-only senders as best practice."
+    }
+  ]
+}

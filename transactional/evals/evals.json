@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-transactional",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a 2FA email template for our app. The user requests a code to log in and we need to email it to them. Keep it simple and secure-feeling.",
+      "expected_output": "A complete OTP email template with: subject line that doesn't expose the code, prominent display of the code in large centered text, expiry clearly stated (10 minutes), security note for unrecognized requests, support link. Both HTML structure and plain-text version. Should follow all OTP best practices: no code in subject, clear expiry, security acknowledgment."
+    },
+    {
+      "id": 2,
+      "prompt": "Our marketing team wants to add a promotional banner to our order confirmation emails promoting our referral program. Is that OK from a deliverability and compliance standpoint?",
+      "expected_output": "A nuanced answer: promotional content in transactional email is acceptable when below the fold and clearly secondary — a referral program mention at the bottom of a real order confirmation is generally fine. It becomes a problem when promotional content is above the fold or visually dominant. Should explain the CAN-SPAM transactional exemption risk and the deliverability concern around classification."
+    },
+    {
+      "id": 3,
+      "prompt": "We're sending all our emails — password resets, marketing newsletters, billing receipts — from the same domain and subdomain. A customer just told me their password reset went to spam. Could our sending setup be causing this?",
+      "expected_output": "Yes — this is a classic infrastructure separation problem. Marketing email complaints can drag down the domain reputation that transactional email depends on. Should explain the separate subdomain strategy (tx. vs em.), separate SPF/DKIM per subdomain, separate sending streams, and why transactional email needs its own reputation insulated from marketing activity."
+    }
+  ]
+}

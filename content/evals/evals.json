@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-content",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a subject line and preview text for a marketing email we're sending to announce a new feature — an AI writing assistant built into our product. We want it to feel exciting but not spammy. Our audience is mostly indie hackers and early-stage founders.",
+      "expected_output": "3-5 subject line options that stay under 60 characters, avoid spam trigger words, use a direct or curiosity-driven tone appropriate for an indie hacker audience. Preview text written as a continuation of the subject, not a repeat. Brief explanation of the choices made."
+    },
+    {
+      "id": 2,
+      "prompt": "I'm reviewing this HTML email template before we deploy it and I'm worried it might be hurting our deliverability. What should I look for? The template is pretty image-heavy and has a lot of links to our product pages.",
+      "expected_output": "A structured content audit checklist covering: image-to-text ratio (60% text minimum), alt text on all images, plain-text version presence, link domain reputation, no URL shorteners, inline CSS for compatibility, total email size under 102KB, no JavaScript, CTA button text quality. Should flag the image-heavy pattern as a known spam risk."
+    },
+    {
+      "id": 3,
+      "prompt": "Why does my email footer matter for deliverability? What should always be in it?",
+      "expected_output": "Explanation of CAN-SPAM footer requirements (physical address, unsubscribe link, company name), why these affect deliverability (complaint rates, legal compliance that inbox providers monitor), and best practice additions like the reason-for-receiving line. Should connect compliance requirements to deliverability outcomes."
+    }
+  ]
+}

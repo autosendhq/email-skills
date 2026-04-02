@@ -1,0 +1,20 @@
+{
+  "skill_name": "email-list-hygiene",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We just acquired a company and they're giving us their email list of about 15,000 contacts. Their last send was 18 months ago. We want to add these to our system and start emailing them. What's the right way to handle this?",
+      "expected_output": "A clear warning that this is a high-risk list scenario: 18 months of inactivity means high bounce risk, potential spam traps, and unverified consent for the acquiring company's emails. Should walk through the full import procedure: consent verification, validation against a real-time service, cross-referencing suppression list, and if proceeding — a small test send to monitor bounce and complaint rate before any full send."
+    },
+    {
+      "id": 2,
+      "prompt": "Our bounce rate jumped from 0.4% to 3.8% after we imported a list from our old CRM. What should we do?",
+      "expected_output": "Immediate action: stop or pause sending to that list segment. Diagnosis steps: identify what came from the CRM import vs existing contacts, run the import through email validation, check for domains with no MX records. Recovery: suppress all hard bounces from the CRM list, validate remaining addresses before resuming. Should explain the reputation impact and why acting quickly matters."
+    },
+    {
+      "id": 3,
+      "prompt": "Should I delete contacts who haven't opened any of our emails in over a year, or just stop sending to them? What's the difference and does it matter?",
+      "expected_output": "Explanation of suppress vs delete: deleting removes the ability to honor future re-engagement correctly and creates a data integrity gap; suppressing keeps a record of inactivity with a reason. Should cover the sunset policy approach (re-engagement sequence first, then suppress), explain why opens are unreliable due to Apple MPP and recommend using clicks as the engagement signal, and note the GDPR right-to-erasure distinction."
+    }
+  ]
+}
