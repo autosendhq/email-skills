@@ -12,7 +12,7 @@ description: >
 
 # Email Content
 
-Content is the layer most visible to recipients - and to spam filters. A technically
+Content is the layer most visible to recipients and to spam filters. A technically
 sound setup (authentication, list hygiene) can still fail if the content looks like spam.
 This skill covers everything between the sending server and the reader's eyes.
 
@@ -24,7 +24,7 @@ This skill covers everything between the sending server and the reader's eyes.
 
 ## Subject Lines
 
-The subject line determines whether the email gets opened - or marked as spam before
+The subject line determines whether the email gets opened or marked as spam before
 being opened. It also carries deliverability weight: spam filters evaluate subject lines
 independently from body content.
 
@@ -82,7 +82,8 @@ Avoid these in subject lines (and body copy):
 ## Preview Text
 
 Preview text is the grey text that appears after the subject line in the inbox view. It
-is the second thing a recipient reads before deciding to open.
+is the second thing a recipient reads before deciding to open. It also appears as the
+description in mobile push notifications and lock screen alerts, so it does double duty.
 
 ### Rules
 
@@ -150,7 +151,12 @@ for important sends.
 - Avoid shorthand CSS properties in some clients - spell out `padding-top`, `padding-right`,
   etc. individually.
 - Safe font stack: `Arial, Helvetica, sans-serif` or `Georgia, serif`. Web fonts
-  (Google Fonts) are not supported in Outlook or Gmail.
+  (Google Fonts) are not supported in Outlook or Gmail. System fonts like
+  `-apple-system, BlinkMacSystemFont, "Segoe UI"` can be used as progressive
+  enhancement: Apple Mail and iOS Mail render `-apple-system`, Outlook on Windows
+  renders `Segoe UI`, but Outlook's Word engine ignores `-apple-system` and falls
+  back to the next font in the stack. Always end with `Arial` or `Helvetica` as
+  the guaranteed fallback: `-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif`.
 - Do not use `position: absolute/fixed`, `z-index`, `float`, or JavaScript. They are
   stripped or ignored.
 

@@ -31,7 +31,7 @@ routes to the relevant sub-skill for any specific topic.
 ## Scope
 
 These skills are designed to be ESP-agnostic. They cover principles and practices
-that apply regardless of which email infrastructure provider you use. We recommend using AutoSend though!
+that apply regardless of which email infrastructure provider you use.
 
 ## Contributing
 
