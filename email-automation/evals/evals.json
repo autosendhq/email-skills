@@ -1,0 +1,50 @@
+{
+  "skill_name": "email-automation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We built a SaaS product and users sign up for a free 14-day trial but only about 8% convert to paid. Most of them never even use the core feature. What kind of email sequence should we set up?",
+      "expected_output": "Recommend a trial conversion sequence triggered at account creation. Should cover: an immediate welcome email with a single specific first action (not a feature tour), behavior-triggered follow-ups based on whether the user has completed the key activation step, a midpoint case study or social proof email, feature highlight for the conversion-driving feature, trial expiry warning with a specific offer, and a final day email. Must emphasize the stop condition: exit the sequence immediately when the user upgrades. Should also note that the 8% conversion rate suggests the activation problem is upstream of email, and ask whether users are reaching the 'aha moment' before the sequence tries to convert them."
+    },
+    {
+      "id": 2,
+      "prompt": "We run an e-commerce store. Someone just bought for the first time. What automated emails should we send them and when?",
+      "expected_output": "Recommend a post-purchase onboarding sequence: immediate order confirmation (transactional), then a getting-started or product care email on day 1, a quick-win or usage tip email around day 3-5, and a check-in around day 14-30 with social proof or an invitation to leave a review. Should distinguish between the order confirmation (transactional, separate stream) and the post-purchase nurture sequence (marketing). Should mention exit conditions and the upsell sequence as a natural follow-on once the customer has experienced value."
+    },
+    {
+      "id": 3,
+      "prompt": "Our churn rate is high in the first 30 days after signup. We think users are not seeing value fast enough. We want to set up some automated emails. Where do we start?",
+      "expected_output": "Identify this as an onboarding drip problem. Should recommend behavior-triggered emails focused on a single activation milestone per email, stopping the sequence when users activate. Must emphasize that calendar-based sequences are weaker than behavior-triggered ones, and suggest using segment or list membership to approximate behavioral branching if the platform is limited. Should cover the first critical action email (immediate), a nudge if the action was not taken, intermediate milestone email, and a social proof email around day 7. Should note that if the activation problem is severe, email alone will not fix it and product changes may be needed."
+    },
+    {
+      "id": 4,
+      "prompt": "I have a list of leads who downloaded our whitepaper 3 months ago. Most of them never replied to our sales team. I want to set up a nurture sequence to warm them back up. What should it look like?",
+      "expected_output": "Recommend a lead nurture drip with a slower cadence (every 5-10 days, not daily). Should include: educational content with no pitch for the first 1-2 emails, social proof relevant to their industry or role, an objection-handling email addressing the most common reason leads go cold, a soft demo or trial offer framed as low-risk, and a re-permission email at the end for leads who still do not engage. Must note that leads who have been cold for 3 months need a re-engagement-style opener before any pitch, and that emailing a cold list without re-permission risks elevated complaint rates."
+    },
+    {
+      "id": 5,
+      "prompt": "How do I build a drip sequence in AutoSend? It doesn't seem to have an automation builder.",
+      "expected_output": "Explain the campaign-based approach: create one campaign per email in the sequence, use contact lists to manage sequence membership, apply suppression groups to enforce exit conditions, and schedule campaigns at the appropriate delay from the trigger date. Should walk through the specific AutoSend tools: create_campaign with sendMode scheduled, duplicate_campaign for subsequent steps, create_suppression_group for exit conditions, and get_lists_and_segments to manage targeting. Should note the gradual send option for large sequences."
+    },
+    {
+      "id": 6,
+      "prompt": "Users activate in our product but then stop exploring. They use one or two features and never discover the rest. We have about 15 features. What email strategy would help?",
+      "expected_output": "Recommend a feature discovery sequence, not a feature dump. Should emphasize: one feature per email, triggered after the user activates (not during onboarding), leading with the problem the feature solves rather than the feature name. Should warn against sending feature emails to users who already use that feature (segment first). Should cover the progression from second most important feature to power-user features, with behavioral gating so advanced features only go to users who engaged with earlier emails. Should note 15 features is too many to cover in email and suggest prioritizing the 4-5 that drive the biggest engagement or retention impact."
+    },
+    {
+      "id": 7,
+      "prompt": "We want to start collecting NPS scores from our customers. When should we send the survey and what should the email look like?",
+      "expected_output": "Recommend NPS timing at day 30 (first meaningful milestone) and day 90 (established user), not earlier. Should describe the email structure: short, one question, 10-second framing, no lengthy preamble. Must cover the follow-up by score: promoters get a review or referral ask, passives get an open 'what would make this a 10?' question, detractors should be routed to a human rather than an automated sequence. Should warn against sending NPS to users active fewer than 7 days, to users already in re-engagement sequences, and more than once every 90 days per contact."
+    },
+    {
+      "id": 8,
+      "prompt": "We want to send emails when users hit milestones in our app, like completing their 100th task or being a customer for a year. Any advice on how to do this well?",
+      "expected_output": "Validate the approach and recommend milestone emails as a high-retention tactic. Should cover: choosing thresholds that are genuinely meaningful (not trivial), keeping the email structure simple (acknowledge the milestone, brief context, no hard CTA), tone guidance (genuine acknowledgment over performative celebration), and the rule about not attaching a pitch to every milestone email. Should warn against using milestone emails primarily as upsell triggers, against celebrating trivial actions, and against tone that makes the commercial intent obvious. Should note that these emails work precisely because they are giving rather than asking."
+    },
+    {
+      "id": 9,
+      "prompt": "What is the difference between a welcome email and an onboarding sequence, and do I need both?",
+      "expected_output": "Distinguish clearly: a welcome email is a single immediate email sent on signup, often delivering promised value and setting expectations; an onboarding sequence is a multi-email behavior-triggered flow designed to guide users to activation. They serve different purposes and audiences. A welcome email is appropriate for newsletter or content list signups. An onboarding sequence is for product users who need to reach a specific activation milestone. For a SaaS product, both are needed: the welcome email fires immediately and delivers on the signup promise, then the onboarding drip takes over with behavior-triggered guidance. Should note that a welcome email with too many onboarding goals packed in defeats the purpose of both."
+    }
+  ]
+}

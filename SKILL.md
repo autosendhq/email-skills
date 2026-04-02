@@ -43,6 +43,7 @@ can undo the other three.
 | Validation, suppression, sunset | `list-hygiene/SKILL.md`        | Managing contacts, bounces, or unsubscribes         |
 | OTP, receipts, password reset   | `transactional/SKILL.md`       | Building or writing transactional email flows       |
 | Drip, campaigns, segmentation   | `marketing-campaigns/SKILL.md` | Writing or planning marketing email                 |
+| Drip sequences, lifecycle flows | `email-automation/SKILL.md`    | Choosing or building automated email sequences      |
 | Postmaster Tools, blacklists    | `monitoring/SKILL.md`          | Diagnosing issues or setting up monitoring          |
 
 ---
