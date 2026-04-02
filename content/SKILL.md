@@ -279,6 +279,32 @@ a reputable domain is unlikely to cause failure. A cluster of them is a problem.
 - Never use white text on a white background or any other method of hiding content.
   Spam filters detect this, and it is illegal under CAN-SPAM.
 
+### Encouraging Replies
+
+A reply is the strongest positive signal a recipient can send to a spam filter: it moves
+you to Primary in Gmail and trains the recipient's filter to trust you. No click or open
+carries the same weight.
+
+**Why replies happen:** Heavily designed HTML emails with CTA buttons signal "broadcast."
+Recipients do not reply to broadcasts. Plain or plain-looking emails that read like they
+came from a real person invite replies because they feel like a conversation.
+
+- **Use a real reply-to address.** `noreply@` closes the conversation before it starts.
+- **End with a direct question.** The reply ask belongs at the end, not buried mid-body:
+  "What's the biggest obstacle you're running into? Hit reply and let me know."
+- **Ask for something small.** "Reply with one word" or "reply yes/no" reduces friction.
+  A short reply counts the same as a long one.
+- **Say you read replies**, but only if it is true. "I read every reply" signals a human
+  is on the other end.
+- **Match the format to the ask.** Plain-text or minimal HTML gets more replies than the
+  same content in a branded template. Heavy design signals marketing, not conversation.
+- **Do not mix a reply ask with competing CTAs.** Pick one.
+
+This applies most to: outreach, feedback emails, onboarding emails from a founder or team
+member, and re-engagement sequences. For transactional emails, reply rate is not the goal.
+
+---
+
 ### The Footer
 
 Every marketing email footer must include:

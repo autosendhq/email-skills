@@ -9,7 +9,7 @@ description: >
   task touches email in any way, start here before doing anything else.
 ---
 
-# Email Skills
+# Email Skills by AutoSend
 
 A modular skill set for AI agents writing, reviewing, or advising on email. The goal
 is inbox placement, not just sending. Every decision here connects back to that.

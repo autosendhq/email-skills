@@ -240,6 +240,23 @@ lines are one of the most visible email mistakes.
 - Avoid: "Click here", "Learn more" (too generic), "Submit"
 - The CTA should tell the reader exactly what will happen when they click.
 
+### Reply Rate
+
+Reply rate is one of the most valuable engagement signals in marketing email. A reply
+moves you to the recipient's Primary inbox and trains their spam filter to trust you.
+It is a stronger signal than a click or open.
+
+Not every campaign should solicit replies, but where the goal is relationship-building
+(welcome sequences, onboarding, re-engagement), designing for replies beats designing
+for clicks:
+
+- Use a real reply-to address, never `noreply@`
+- End with a direct question rather than a CTA button: "What brought you to [Product]?
+  Hit reply and tell me."
+- Plain-text or minimal HTML gets more replies than a branded template
+
+See `content/SKILL.md` for the full set of reply-inviting copy patterns.
+
 ---
 
 ## A/B Testing
@@ -258,7 +275,7 @@ lines are one of the most visible email mistakes.
 - Test one variable at a time.
 - Use a statistically meaningful sample. For most lists: 10-20% for each variant,
   then send the winner to the remainder.
-- Measure by **click rate**, not open rate. Open rates are unreliable due to Apple MPP.
+- Measure by **click rate** or **reply rate**, not open rate. Open rates are unreliable due to Apple MPP.
 - Run tests consistently: same day of week, same time of day, comparable segments.
 - Document results. Build a library of what has worked for your audience.
 

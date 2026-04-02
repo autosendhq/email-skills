@@ -25,6 +25,12 @@ email-skills/
 
 ## Installation
 
+**To install using `skills` CLI:**
+
+```bash
+npx skills add autosendhq/email-skills
+```
+
 **Global (all projects):**
 
 ```bash
