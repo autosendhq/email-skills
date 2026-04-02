@@ -13,7 +13,7 @@ in only the sub-skills relevant to the task at hand.
 
 ```
 email-skills/
-├── deliverability/         Entry point — overview, core principles, routing table
+├── SKILL.md                Entry point: overview, core principles, routing table
 ├── authentication/         SPF, DKIM, DMARC, BIMI
 ├── content/                Subject lines, HTML structure, copy rules, CTAs
 ├── compliance/             CAN-SPAM, GDPR, CASL, consent flows
@@ -25,7 +25,7 @@ email-skills/
 
 ## Usage
 
-Load `deliverability/SKILL.md` as the entry point. It provides an overview and
+Load `SKILL.md` as the entry point. It provides an overview and
 routes to the relevant sub-skill for any specific topic.
 
 ## Scope
